@@ -1,0 +1,16 @@
+{
+  "name": "loginsystem",
+  "version": "1.0.0",
+  "description": "Tutorial to make full stack login authentication",
+  "main": "index.js",
+  "author": "Md Ariful Islam, DCI-Web dev",
+  "scripts": {
+    "client": "npm start --prefix client",
+    "server": "nodemon server.js --prefix server",
+    "start": "concurrently \"npm run client\" \"npm run server\" "
+  },
+  "dependencies": {
+    "concurrently": "^7.2.1",
+    "dotenv": "^16.0.1"
+  }
+}
