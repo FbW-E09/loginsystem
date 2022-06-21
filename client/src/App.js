@@ -34,9 +34,11 @@ function App() {
   // send registration data to server
   const getRegister = ()=>{
     console.log(name, email,password)
-    // axios.method(url, data).then().catch()
+    // axios.method(url, data{fields:values}).then().catch()
     axios.post('/auth/registration', {
-      name,email,password
+      fullname: name,
+      email,
+      password
     }).then(response => {
       console.log(response.data.errors)
       setErrors(response.data.errors)
