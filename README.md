@@ -26,7 +26,7 @@ like that: npm i express cors dotenv bcrypt
 - display success messages if no errors
 
 # Step 05:
-- Like step 02 and 03 make sililar validation for login also as: /auth/login routes
+- Like step 02 and 03 make similar validation for login also as: /auth/login routes
 - display error or success in login form as well
 
 # hints:
